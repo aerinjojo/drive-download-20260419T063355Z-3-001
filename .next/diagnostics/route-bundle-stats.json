@@ -1,13 +1,13 @@
 [
   {
     "route": "/assignment6",
-    "firstLoadUncompressedJsBytes": 477433,
+    "firstLoadUncompressedJsBytes": 483385,
     "firstLoadChunkPaths": [
       ".next/static/chunks/119e6xg8zs.ge.js",
       ".next/static/chunks/0cwzi6xsr2fsh.js",
       ".next/static/chunks/0_..htt4acxf0.js",
-      ".next/static/chunks/0xk2jwsqgtkdi.js",
-      ".next/static/chunks/turbopack-0mum1ppk0r1t1.js",
+      ".next/static/chunks/0c48i~ekdu96s.js",
+      ".next/static/chunks/turbopack-0f4gk0_lbyd_p.js",
       ".next/static/chunks/0fn7uq8~rjaqd.js",
       ".next/static/chunks/turbopack-16bu1b0fu_lan.js"
     ]
