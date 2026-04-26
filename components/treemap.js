@@ -46,9 +46,7 @@ export function TreeMap(props) {
     }, [tree, innerWidth, innerHeight]);
 
     const nodes = root ? root.descendants().filter(d => d.depth > 0) : [];
-    const color = useMemo(() => {
-        return scaleOrdinal(schemeDark2).domain(nodes.map(d => `${d.depth}-${d.data.attr || "root"}-${d.data.name}`));
-    }, [nodes]);
+    const color = useMemo(() => scaleOrdinal(schemeDark2), []);
 
     const getNodeKey = (node) => `${node.depth}-${node.data.attr || "root"}-${node.data.name}`;
 
@@ -60,7 +58,7 @@ export function TreeMap(props) {
         <svg
             viewBox={`0 0 ${svg_width} ${svg_height}`}
             preserveAspectRatio="xMidYMid meet"
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "100%", height: "auto", display: "block" }}
         >
             <g transform={`translate(${margin.left}, ${margin.top})`}>
                 {nodes.map(node => {
